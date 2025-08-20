@@ -1,0 +1,71 @@
+/* ==== BASIC STYLES ==== */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #000;  /* Default black background */
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.clock-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.time {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 20px;
+  margin: 10px 0;
+  opacity: 0.85;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Morning theme */
+body.morning {
+  background: #f1f1f1;
+  color: #000;
+}
+
+/* Afternoon theme */
+body.afternoon {
+  background: #dcdcdc;
+  color: #111;
+}
+
+/* Evening theme */
+body.evening {
+  background: #000;
+  color: #fff;
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+  .time {
+    font-size: 40px;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+}
